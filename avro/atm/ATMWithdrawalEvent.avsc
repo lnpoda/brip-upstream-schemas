@@ -6,7 +6,7 @@
     "fields" : [
         {"name" : "atmTransactionId", "type" : "string", "doc" : "unique id to identify an ATM transaction"},
         {"name" : "accountId", "type" : "string", "doc" : "unique id to identify the account in transaction"},
-        {"name" : "amount", "type" : "bytes", "logicalType" : "decimal", "precision" : 20, "scale" : 2, "doc" : "amount of cash dispensed"},
+        {"name" : "amount", "type" : {"type" : "bytes", "logicalType" : "decimal", "precision" : 20, "scale" : 2}, "doc" : "amount of cash dispensed"},
         {"name" : "currency", "type" : "string", "doc" : "ISO code of the currency in transaction"},
         {"name" : "atmId", "type" : "string", "doc" : "unique id to identify an ATM"},
         {"name" : "location", "type" : ["null", "string"], "default" : null, "doc" : "human-readable location"},
